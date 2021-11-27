@@ -42,11 +42,13 @@ def page_close():
                 
                 - Streamlit Gallery:
                 
-                    - 탐색1 (통계 방법 소개): https://github.com/rdzudzar/DistributionAnalyser
+                    - 통계방법 탐색: https://github.com/rdzudzar/DistributionAnalyser
                 
-                    - 탐색2 (Data Profiler): https://github.com/baligoyem/dataqtor
+                    - 데이터 EDA: https://github.com/baligoyem/dataqtor
                 
-                    - 탐색3 (분포 시각화): https://github.com/rdzudzar/DistributionAnalyser
+                    - 데이터 분포 시각화: https://github.com/rdzudzar/DistributionAnalyser
+                    
+                    - 시각화 차트: https://share.streamlit.io/discdiver/data-viz-streamlit/main/app.py
                 
                     - 모델링: https://github.com/ahmedbesbes/playground
                 
