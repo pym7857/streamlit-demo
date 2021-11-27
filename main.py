@@ -48,10 +48,10 @@ def main():
 
     pages = {
         "소개": page_introduction,
-        "탐색1(통계방법)": page_explore,
-        "탐색2(Data Profiler)": page_profiler,
-        "탐색3(분포 시각화)": page_fit,
-        "시각화": page_vis,
+        "통계방법 탐색": page_explore,
+        "데이터 EDA": page_profiler,
+        "데이터 분포 시각화": page_fit,
+        "시각화 차트": page_vis,
         "모델링🍎": page_playground,
         "대시보드": page_dashboard,
         "참고말": page_close,
