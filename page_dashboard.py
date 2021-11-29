@@ -107,7 +107,7 @@ def page_dashboard():
             fig_c2 = go.Figure(go.Indicator(
                 mode="number+delta",
                 value=732,
-                number={'suffix': " HH", "font": {"size": 40, 'color': "#008080", 'family': "Arial"}, 'valueformat': ',f'},
+                number={'suffix': " EA", "font": {"size": 40, 'color': "#008080", 'family': "Arial"}, 'valueformat': ',f'},
                 delta={'position': "bottom", 'reference': 927},
                 domain={'x': [0, 1], 'y': [0, 1]}))
             fig_c2.update_layout(autosize=False,
@@ -283,7 +283,7 @@ def page_dashboard():
 
     ### Block 3#########################################################################################
     with st.container():
-        col1, col2, col3, col4, col5, col6, col7 = st.columns([1,10,1,10,1,20,1])
+        col1, col2, col3, col4, col5, col6, col7 = st.columns([7,10,5,10,1,20,1])
         with col1:
             st.write("")
         with col2:
@@ -291,7 +291,7 @@ def page_dashboard():
             fig_cv = go.Figure(go.Indicator(
                 mode="gauge+number+delta",
                 value=1.05,
-                number={"font": {"size": 22, 'color': "#008080", 'family': "Arial"}, "valueformat": "#,##0"},
+                number={"font": {"size": 12, 'color': "#008080", 'family': "Arial"}, "valueformat": "#,##0"},
                 domain={'x': [0, 1], 'y': [0, 1]},
                 gauge={
                     'axis': {'range': [None, 1.5], 'tickwidth': 1, 'tickcolor': "black"},
@@ -302,7 +302,7 @@ def page_dashboard():
                         {'range': [1, 1.5], 'color': '#3D9970'}]}))
 
             fig_cv.update_layout(paper_bgcolor="#fbfff0", font={'color': "#008080", 'family': "Arial"}, height=135, width=250,
-                                margin=dict(l=10, r=10, b=15, t=20))
+                                margin=dict(l=80, r=80, b=15, t=20))
             st.plotly_chart(fig_cv)
             st.markdown(html_card_footer6, unsafe_allow_html=True)
         with col3:
@@ -312,7 +312,7 @@ def page_dashboard():
             fig_sv = go.Figure(go.Indicator(
                 mode="gauge+number+delta",
                 value=0.95,
-                number={"font": {"size": 22, 'color': "#008080", 'family': "Arial"}, "valueformat": "#,##0"},
+                number={"font": {"size": 12, 'color': "#008080", 'family': "Arial"}, "valueformat": "#,##0"},
                 domain={'x': [0, 1], 'y': [0, 1]},
                 gauge={
                     'axis': {'range': [None, 1.5], 'tickwidth': 1, 'tickcolor': "black"},
@@ -322,7 +322,7 @@ def page_dashboard():
                         {'range': [0, 1], 'color': '#FF4136'},
                         {'range': [1, 1.5], 'color': '#3D9970'}]}))
             fig_sv.update_layout(paper_bgcolor="#fbfff0", font={'color': "#008080", 'family': "Arial"}, height=135, width=250,
-                                margin=dict(l=10, r=10, b=15, t=20))
+                                margin=dict(l=80, r=80, b=15, t=20))
             st.plotly_chart(fig_sv)
             st.markdown(html_card_footer7, unsafe_allow_html=True)
 
@@ -332,7 +332,9 @@ def page_dashboard():
     st.markdown(html_br, unsafe_allow_html=True)
 
     with st.container():
-        col6, col7 = st.columns([20,1])
+        col5, col6, col7 = st.columns([2,20,5])
+        with col5:
+            st.write("")
         with col6:
             y = data.loc[data.Activity_name == 'Total']
             y = data.loc[data.Activity_name == 'Total']
