@@ -47,14 +47,15 @@ def main():
     """
 
     pages = {
-        "소개": page_introduction,
-        "통계방법 탐색": page_explore,
-        "데이터 EDA": page_profiler,
-        "데이터 분포 시각화": page_fit,
-        "시각화 차트": page_vis,
-        "모델링🍎": page_playground,
-        "대시보드": page_dashboard,
-        "참고말": page_close,
+        "🍎소개": page_introduction,
+        "🍎탐색": page_introduction,
+        "1)통계방법 탐색": page_explore,
+        "2)데이터 EDA": page_profiler,
+        "3)데이터 분포 시각화": page_fit,
+        "🍎시각화 차트": page_vis,
+        "🍎모델링": page_playground,
+        "🍎대시보드": page_dashboard,
+        "참고": page_close,
     }
 
     st.sidebar.title("메뉴")
