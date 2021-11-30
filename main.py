@@ -47,13 +47,12 @@ def main():
     """
 
     pages = {
-        "📌소개": page_introduction,
-        "📌대시보드": page_dashboard,
-        "📌탐색": page_introduction,
-        "1)데이터 분포 확인": page_vis,
-        "2)데이터 EDA": page_profiler,
-        "📌모델링": page_playground,
-        "📌참고": page_close,
+        "📌PJT Outline": page_introduction,
+        "📌Descriptive Statistics": page_profiler,
+        "📌Visualization": page_vis,
+        "📌Machine Learning": page_playground,
+        "📌Dashboard": page_dashboard,
+        "📌reference": page_close,
     }
 
     st.sidebar.title("메뉴")
