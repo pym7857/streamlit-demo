@@ -31,26 +31,26 @@ plt.rcParams['axes.unicode_minus'] = False
 import warnings
 warnings.filterwarnings('ignore')
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
-hide_streamlit_style = """
-            <style>
-            footer {
-	        visibility: hidden;
-	            }
-            footer:after {
-	            content:'developed by Beytullah Ali Göyem'; 
-	            visibility: visible;
-	            display: block;
-	            position: relative;
-	            #background-color: red;
-	            padding: 5px;
-	            top: 2px;
-                    }
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
 def page_profiler():
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+    hide_streamlit_style = """
+		<style>
+		footer {
+			visibility: hidden;
+			}
+		footer:after {
+			content:'developed by Beytullah Ali Göyem'; 
+			visibility: visible;
+			display: block;
+			position: relative;
+			#background-color: red;
+			padding: 5px;
+			top: 2px;
+			}
+		</style>
+		"""
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+	
     @st.cache(allow_output_mutation=True, persist = True)
     def beforeSTable():
         global before
