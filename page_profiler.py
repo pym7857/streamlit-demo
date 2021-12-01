@@ -90,7 +90,7 @@ def page_profiler():
         before = beforeSTable()
         after = afterSTable()
         dataset = reading_dataset()
-        task = st.selectbox("Menu", ["Data Profiler"])
+        task = st.selectbox("Menu", ["Data Profiler", "Contact Me"])
         st.session_state.beforeSS = before
         st.session_state.afterSS = after
         if task == "Data Profiler":
