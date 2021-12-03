@@ -27,7 +27,7 @@ np.random.seed(1)
 
 logo, name = st.sidebar.columns(2)
 with logo:
-    image = './images/dx.jpeg'
+    image = './images/dxab_main.png'
     st.image(image, use_column_width=True)
 with name:
     st.markdown("<h1 style='text-align: left; color: grey;'> \
