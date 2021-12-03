@@ -22,6 +22,9 @@ def page_introduction():
                 unsafe_allow_html=True)
     st.markdown("<h1 style='text-align: center;'> DXAB 👋 </h1>", 
                 unsafe_allow_html=True)
+    
+    image = './images/dxab_main.png'
+    st.image(image, use_column_width=True)
      
 
     st.info("""
