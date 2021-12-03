@@ -29,9 +29,9 @@ logo, name = st.sidebar.columns(2)
 with logo:
     image = './images/dxab_main.png'
     st.image(image, use_column_width=True)
-with name:
-    st.markdown("<h1 style='text-align: left; color: grey;'> \
-                DXAB </h1>", unsafe_allow_html=True)
+# with name:
+#     st.markdown("<h1 style='text-align: left; color: grey;'> \
+#                 DXAB </h1>", unsafe_allow_html=True)
 
 st.sidebar.write(" ")
 
